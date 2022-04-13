@@ -92,27 +92,54 @@ header {
 }
 
 /* Create angled background with 'before' pseudo-element */
-header::before {
+.mainHeader::before {
 	content: "  ";
 	display: block;
 	position: absolute;
 	left: 0;
-	bottom: 42.5em;
+	bottom: 27.5em;
 	width: 100%;
-  height: 250px;
+  height: 550px;
 	/*height: calc(var(--heading-height) + 10em);*/
 	z-index: -1;
 	transform: skewY(-3.5deg);
 	background-color: #3b3636;
+  background-image: url("https://images.wallpapersden.com/image/download/small-memory_am1pa2aUmZqaraWkpJRmbmdlrWZlbWU.jpg");
 	background-size: cover;
 	border-bottom: .2em solid #f6f4e6;
 }
 
-header h1 {
+.mainHeader h1 {
 	font-size: calc(1.8em + 2.6vw);
 	font-weight: 700;
 	letter-spacing: .01em;
-	padding: 10rem 0 0 4.5rem;
+	padding: 16rem 0 0 4.5rem;
+	text-shadow: .022em .022em .022em #111;
+	color: #f6f4e6;
+}
+
+.projHeader::before {
+	content: "  ";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 27.5em;
+	width: 100%;
+  height: 550px;
+	/*height: calc(var(--heading-height) + 10em);*/
+	z-index: -1;
+	transform: skewY(-3.5deg);
+	background-color: #3b3636;
+  background-image: url("https://images.wallpapersden.com/image/download/small-memory_am1pa2aUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+	background-size: cover;
+	border-bottom: .2em solid #f6f4e6;
+}
+
+.projHeader h1 {
+	font-size: calc(1.8em + 2.6vw);
+	font-weight: 700;
+	letter-spacing: .01em;
+	padding: 16rem 0 0 4.5rem;
 	text-shadow: .022em .022em .022em #111;
 	color: #f6f4e6;
 }
@@ -129,7 +156,7 @@ p {
     background-color: rgba(255, 166, 0, 0);
     height: 750px;
     /*margin: 7% 4% 7% 4%;*/
-    margin: 100px 75px 0px 75px;
+    margin: 225px 75px 0px 75px;
     display: flex;
 }
 
@@ -147,6 +174,11 @@ p {
   /*height: 100px;*/
   margin: 5px;
   padding: 10px;
+}
+
+.proj_1 a{
+  color: rgb(255, 255, 255);
+  padding-left: 42.5%;
 }
 
 .proj_img{
@@ -215,4 +247,15 @@ p {
   margin-bottom:0;
 }
 
+.projectDesc{
+  margin: 225px 100px 100px 100px;
+  height: 450px;
+  background-color: #3b3636;
+}
 
+.projectDescPic{
+  margin-right: 1150px;
+  padding-bottom: 431.5px;
+  background-image: url("https://cds.mnm.be/sites/default/files/styles/800x600_focus/public/article/2021_04/schermafbeelding_2021-04-14_om_17.18.16.png?itok=XbsEVmCa");
+  background-color: blue;
+}
